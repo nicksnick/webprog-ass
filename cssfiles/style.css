@@ -1,0 +1,290 @@
+@font-face {
+  font-family: gamefont;
+  src: url("/Assignment2/fonts/Gameplay.ttf");
+}
+@font-face {
+  font-family: alotfont;
+  src: url("/Assignment2/fonts/alotfont.ttf");
+}
+@font-face {
+  font-family: yellowtail;
+  src: url("/Assignment2/fonts/gamefont.woff");
+}
+@font-face {
+  font-family: play;
+  src: url("/Assignment2/fonts/vampyre.ttf");
+}
+* {
+  box-sizing: border-box;
+}
+
+p {
+  font-family: play;
+  font-size: 18px;
+}
+
+.p {
+  font-family: yellowtail;
+  font-size: 35px;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-color: #116466;
+  background-image: url("/Assignment2/image/backgroundgif.gif");
+  background-size: 20%;
+}
+.gameimg {
+  width: 800px;
+  height: 442px;
+}
+.gamevid {
+  width: 800px;
+  height: 442px;
+}
+.trending {
+  opacity: 1;
+  display: block;
+  width: 300px;
+  height: 160px;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.zoom {
+  transition: transform 0.2s;
+}
+.zoom:hover {
+  transform: scale(1.1);
+}
+.zoom2 {
+  transition: transform 0.2s;
+}
+.zoom2:hover {
+  background-color: rgb(107, 107, 107);
+  transform: scale(1.05);
+}
+/* Create two unequal columns that floats next to each other  */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 77%;
+}
+/* Right column */
+.rightcolumn {
+  border-radius: 25px;
+  float: right;
+  width: 21%;
+  background-color: rgb(179, 212, 141, 0.9);
+  padding: 15px;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+/* Fake image */
+.fakeimg {
+  background-color: #2c3531;
+  width: 100%;
+  padding: 2px;
+}
+
+.titleback {
+  background-color: rgb(126, 170, 168, 0.95);
+  width: fit-content;
+  font-family: gamefont;
+  font-size: 40px;
+  padding: 5px;
+}
+
+.titleback2 {
+  font-family: gamefont;
+  font-size: 25px;
+}
+
+.trend {
+  position: sticky;
+  z-index: 1;
+}
+/* Add a card effect for articles */
+.card1 {
+  border-radius: 25px;
+  background-color: rgb(217, 176, 140, 0.9);
+  padding: 20px;
+  margin-top: 10px;
+}
+.card2 {
+  border-radius: 25px;
+  background-color: rgba(230, 231, 166, 0.9);
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.gamelink {
+  font-style: bold;
+  font-size: 25px;
+
+  text-decoration: none;
+}
+.gamelink:hover {
+  color: rgb(255, 255, 255, 0.9);
+}
+
+.sss {
+  background-color: red;
+  font-size: 25px;
+}
+.hhh {
+  background-color: yellow;
+  font-size: 25px;
+}
+.card3 {
+  border-radius: 25px;
+  background-color: #d1e8e2;
+  padding: 20px;
+  width: 365x;
+  height: 500px;
+  overflow: auto;
+}
+.about {
+  width: 285px;
+  height: 160px;
+}
+
+.contact {
+  font-family: Georgia;
+  font-style: bold;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Footer */
+.footer {
+  border-radius: 25px;
+  padding: 10 px;
+  text-align: center;
+  background-color: powderblue;
+  margin-top: 20px;
+}
+/* Responsive layout - when the screen is less than 800px  wide, make the two columns stack on top of each other instead  of next to each other */
+@media screen and (max-width: 800px) {
+  .container,
+  .gameimg,
+  .gamevid,
+  .leftcolumn,
+  .rightcolumn,
+  .trending,
+  body {
+    width: 100%;
+    padding: 10;
+  }
+  .rightcolumn {
+    margin-left: 0;
+  }
+}
+/* Responsive layout - when the screen is less than 400px  wide, make the navigation links stack on top of each other  instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+/*fadein hover*/
+.container {
+  position: static;
+  width: 100%;
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.container:hover .trending {
+  opacity: 0.4;
+}
+.container:hover .middle {
+  opacity: 1;
+}
+.midtext {
+  background-color: #c2a8a89d;
+  color: white;
+  font-family: gamefont;
+  font-size: 25px;
+  padding: 10px 20px;
+}
+
+.footnote {
+  padding: 10px;
+  margin-left: 20px;
+  text-align: left;
+  font-family: alotfont;
+  font-size: 20px;
+}
+
+/* Next & previous buttons */
+.next,
+.prev {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 15px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 3px;
+  user-select: none;
+  z-index: 9;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px;
+}
+.prev {
+  left: 0;
+  border-radius: 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.next:hover,
+.prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

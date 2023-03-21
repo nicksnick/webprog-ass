@@ -1,0 +1,40 @@
+/* Header/Blog Title */
+.header {
+  max-height: 500;
+  text-align: center;
+  background: rgb(44, 53, 49, 0);
+}
+.header h1 {
+  font-size: 50px;
+}
+/* Style the top navigation bar */
+.topnav {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  border-radius: 15px;
+  color: black;
+  overflow: hidden;
+  background-color: rgb(238, 184, 184);
+}
+/* Style the topnav links */
+.topnav a,
+.topnav span {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav button {
+  color: #f2f2f2;
+  padding: 14px 16px;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: peachpuff;
+  color: black;
+}

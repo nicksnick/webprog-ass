@@ -1,0 +1,67 @@
+.shopping-cart table {
+  empty-cells: hide;
+  float: left;
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.4);
+  background-color: rgb(122, 194, 223);
+}
+
+.shopping-cart table tr td input[type="number"] {
+  color: black;
+  width: 100px;
+  padding: 12px 14px;
+  font-size: 20px;
+}
+
+.product-headerr {
+  padding: 2px;
+}
+.product-header {
+  border: 3px solid rgb(147, 138, 230);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.bottom {
+  padding: 20px !important;
+  font-size: 30px !important;
+}
+
+.cartitems {
+  text-overflow: ellipsis;
+  color: rgb(255, 255, 255);
+  font-family: "Franklin Gothic Medium";
+  font-size: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 3px solid rgb(236, 169, 169);
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.cart-img {
+  margin: auto;
+}
+
+.option-btn:link,
+.option-btn:visited,
+.option-btn:hover,
+.option-btn:active {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.checkout {
+  margin: auto;
+  width: 200px !important;
+}
+
+.checkout-form,
+.message-container {
+  background-color: rgba(238, 168, 168, 0.884) !important;
+}
+
+.display-order {
+  width: 500px !important;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.com/1999/xhtml">
+  <head>
+    <title>calculator</title>
+  </head>
+
+  <body>
+    <fieldset>
+      <legend>2 Number Calculator</legend>
+      <form name="calculator" method="post">
+        <table>
+          <tr>
+            <td>
+              <label for="firstnum">First number</label>
+            </td>
+            <td>
+              <input type="number" name="firstnum" id="firstnum" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="secondnum">Second number</label>
+            </td>
+            <td>
+              <input name="number" id="secondnum" />
+            </td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <td>
+              <input
+                type="button"
+                name="add"
+                id="add"
+                value="+"
+                onclick="return calculate('+')"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                name="sub"
+                id="sub"
+                value="-"
+                onclick="return calculate('-')"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                name="mult"
+                id="mult"
+                value="*"
+                onclick="return calculate('*')"
+              />
+            </td>
+            <td>
+              <input
+                type="button"
+                name="div"
+                id="div"
+                value="/"
+                onclick="return calculate('/')"
+              />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </fieldset>
+  </body>
+  <script src="calculator.js"></script>
+</html>
